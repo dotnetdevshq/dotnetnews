@@ -1,0 +1,2 @@
+# dotnetnews
+Dotnet newsletter repository
