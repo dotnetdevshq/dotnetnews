@@ -1,0 +1,13 @@
+body {
+    padding-top: 70px; /* Adjust based on the height of your fixed header */
+}
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+.dark-mode .bg-light {
+    background-color: #1f1f1f !important;
+}
+.dark-mode .text-dark {
+    color: #ffffff !important;
+}
