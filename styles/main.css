@@ -11,3 +11,18 @@ body {
 .dark-mode .text-dark {
     color: #ffffff !important;
 }
+.dark-mode .navbar-nav .nav-link {
+    color: #ffffff !important;
+}
+.beehiiv-embed {
+    width: 100%;
+    height: 320px;
+    border-radius: 0;
+    border: none;
+    margin: 0;
+    background-color: transparent;
+}
+
+.dark-mode .beehiiv-embed {
+    background-color: #121212; /* Adjust if needed for better dark mode support */
+}
