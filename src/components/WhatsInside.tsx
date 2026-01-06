@@ -69,7 +69,7 @@ export default function WhatsInside() {
               </div>
               
               {/* Content */}
-              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text" style={{ backgroundImage: `linear-gradient(to right, var(--tw-gradient-stops))` }}>
+              <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-3">
                 {category.title}
               </h3>
               <p className="text-slate-600 dark:text-slate-400 leading-relaxed text-sm">
