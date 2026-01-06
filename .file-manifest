@@ -1,0 +1,9 @@
+.spark-initial-sha
+PRD.md
+index.html
+spark.meta.json
+src/App.tsx
+src/components/EmailPreview.tsx
+src/components/email
+src/index.css
+src/lib/emailGenerator.ts
