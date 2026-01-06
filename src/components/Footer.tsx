@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faTwitter, faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faGithub, faLinkedin, faFacebook, faInstagram, faTiktok, faThreads, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
 
 export default function Footer() {
@@ -26,15 +26,30 @@ export default function Footer() {
             </div>
             
             {/* Social */}
-            <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 rounded-full bg-slate-800 dark:bg-slate-700 flex items-center justify-center hover:bg-gradient-to-br hover:from-violet-600 hover:to-fuchsia-600 transition-all duration-300 hover:scale-110 hover:rotate-12">
-                <FontAwesomeIcon icon={faTwitter} className="text-lg" />
-              </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-slate-800 dark:bg-slate-700 flex items-center justify-center hover:bg-gradient-to-br hover:from-violet-600 hover:to-fuchsia-600 transition-all duration-300 hover:scale-110 hover:rotate-12">
+            <div className="flex gap-4 flex-wrap justify-center">
+              <a href="https://github.com/dotnetdevshq/dotnetnews" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 dark:bg-slate-700 flex items-center justify-center hover:bg-gradient-to-br hover:from-violet-600 hover:to-fuchsia-600 transition-all duration-300 hover:scale-110 hover:rotate-12">
                 <FontAwesomeIcon icon={faGithub} className="text-lg" />
               </a>
-              <a href="#" className="w-10 h-10 rounded-full bg-slate-800 dark:bg-slate-700 flex items-center justify-center hover:bg-gradient-to-br hover:from-violet-600 hover:to-fuchsia-600 transition-all duration-300 hover:scale-110 hover:rotate-12">
+              <a href="https://www.linkedin.com/company/dotnetdevs/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 dark:bg-slate-700 flex items-center justify-center hover:bg-gradient-to-br hover:from-violet-600 hover:to-fuchsia-600 transition-all duration-300 hover:scale-110 hover:rotate-12">
                 <FontAwesomeIcon icon={faLinkedin} className="text-lg" />
+              </a>
+              <a href="https://x.com/dotnetdevs_io" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 dark:bg-slate-700 flex items-center justify-center hover:bg-gradient-to-br hover:from-violet-600 hover:to-fuchsia-600 transition-all duration-300 hover:scale-110 hover:rotate-12">
+                <FontAwesomeIcon icon={faTwitter} className="text-lg" />
+              </a>
+              <a href="https://www.facebook.com/dotnetdevsio" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 dark:bg-slate-700 flex items-center justify-center hover:bg-gradient-to-br hover:from-violet-600 hover:to-fuchsia-600 transition-all duration-300 hover:scale-110 hover:rotate-12">
+                <FontAwesomeIcon icon={faFacebook} className="text-lg" />
+              </a>
+              <a href="https://www.instagram.com/dotnetdevs_io/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 dark:bg-slate-700 flex items-center justify-center hover:bg-gradient-to-br hover:from-violet-600 hover:to-fuchsia-600 transition-all duration-300 hover:scale-110 hover:rotate-12">
+                <FontAwesomeIcon icon={faInstagram} className="text-lg" />
+              </a>
+              <a href="https://www.tiktok.com/@dotnetdevs" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 dark:bg-slate-700 flex items-center justify-center hover:bg-gradient-to-br hover:from-violet-600 hover:to-fuchsia-600 transition-all duration-300 hover:scale-110 hover:rotate-12">
+                <FontAwesomeIcon icon={faTiktok} className="text-lg" />
+              </a>
+              <a href="https://www.threads.com/@dotnetdevs_io" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 dark:bg-slate-700 flex items-center justify-center hover:bg-gradient-to-br hover:from-violet-600 hover:to-fuchsia-600 transition-all duration-300 hover:scale-110 hover:rotate-12">
+                <FontAwesomeIcon icon={faThreads} className="text-lg" />
+              </a>
+              <a href="https://www.youtube.com/@dotnetdevs_io" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-slate-800 dark:bg-slate-700 flex items-center justify-center hover:bg-gradient-to-br hover:from-violet-600 hover:to-fuchsia-600 transition-all duration-300 hover:scale-110 hover:rotate-12">
+                <FontAwesomeIcon icon={faYoutube} className="text-lg" />
               </a>
             </div>
           </div>
