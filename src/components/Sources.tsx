@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Sources() {
   return (
     <section id="sources" className="py-24 bg-white dark:bg-slate-950">
@@ -7,10 +9,10 @@ export default function Sources() {
             Trusted Sources
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400">
-            We monitor 140+ premium sources across the .NET ecosystem
+            We monitor 140+ trusted sources across the .NET ecosystem
           </p>
         </div>
-        <div className="max-w-5xl mx-auto bg-gradient-to-br from-slate-50 to-violet-50/30 dark:from-slate-900 dark:to-violet-950/20 rounded-3xl p-10 border-2 border-violet-200/50 dark:border-violet-800/50 shadow-2xl">
+        <div className="max-w-5xl mx-auto bg-linear-to-br from-slate-50 to-violet-50/30 dark:from-slate-900 dark:to-violet-950/20 rounded-3xl p-10 border-2 border-violet-200/50 dark:border-violet-800/50 shadow-2xl">
           <div className="flex flex-wrap justify-center gap-3">
             {[
               'Microsoft DevBlogs',
@@ -33,9 +35,10 @@ export default function Sources() {
                 {source}
               </span>
             ))}
-            <span className="px-6 py-2.5 bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white rounded-xl font-bold shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300 cursor-default">
-              + 128 more sources
-            </span>
+            <Link to="/sources"
+              className="px-6 py-2.5 bg-linear-to-r from-violet-600 to-fuchsia-600 text-white rounded-xl font-bold shadow-lg hover:shadow-2xl hover:scale-110 transition-all duration-300">
+              + 128 additional sources
+            </Link>
           </div>
         </div>
       </div>

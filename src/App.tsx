@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
-import { toast, Toaster } from 'sonner'
-import Header from './components/Header'
+import { toast } from 'sonner'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Hero from './components/Hero'
 import WhyIBuiltThis from './components/WhyIBuiltThis'
 import HowItWorks from './components/HowItWorks'
@@ -8,10 +8,45 @@ import WhatsInside from './components/WhatsInside'
 import Testimonials from './components/Testimonials'
 import CTASection from './components/CTASection'
 import Sources from './components/Sources'
-import Footer from './components/Footer'
+import Layout from './components/Layout'
+import ScrollToTop from './components/ScrollToTop'
+import Privacy from './components/pages/Privacy'
+import Terms from './components/pages/Terms'
+import Contact from './components/pages/Contact'
+import GDPR from './components/pages/GDPR'
+import SourcesPage from './components/pages/SourcesPage'
+import Sponsorship from './components/pages/Sponsorship'
+
+interface AppProps {
+  isDark: boolean
+  toggleDarkMode: () => void
+}
+
+function HomePage({ isDark, toggleDarkMode }: AppProps) {
+  const [email, setEmail] = useState('')
+
+  const handleSubscribe = (e: React.FormEvent) => {
+    e.preventDefault()
+    if (email) {
+      toast.success('Thank you for subscribing to .NET News.')
+      setEmail('')
+    }
+  }
+
+  return (
+    <Layout isDark={isDark} toggleDarkMode={toggleDarkMode}>
+      <Hero email={email} setEmail={setEmail} handleSubscribe={handleSubscribe} />
+      <WhyIBuiltThis />
+      <HowItWorks />
+      <WhatsInside />
+      <Testimonials />
+      <CTASection email={email} setEmail={setEmail} handleSubscribe={handleSubscribe} />
+      <Sources />
+    </Layout>
+  )
+}
 
 export default function App() {
-  const [email, setEmail] = useState('')
   const [isDark, setIsDark] = useState(false)
 
   useEffect(() => {
@@ -44,38 +79,22 @@ export default function App() {
     }
   }, [isDark])
 
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (email) {
-      toast.success('Successfully subscribed to .NET News!')
-      setEmail('')
-    }
-  }
-
   const toggleDarkMode = () => {
-    console.log('Toggle clicked, current isDark:', isDark) // Debug log
     setIsDark(!isDark)
   }
 
   return (
-    <>
-      <Toaster position="top-center" />
-      <div className="min-h-screen flex flex-col bg-gradient-to-b from-slate-50 to-violet-50/30 dark:from-slate-900 dark:to-slate-950 transition-colors duration-300">
-        
-        <Header isDark={isDark} toggleDarkMode={toggleDarkMode} />
-
-        <main className="flex-1">
-          <Hero email={email} setEmail={setEmail} handleSubscribe={handleSubscribe} />
-          <WhyIBuiltThis />
-          <HowItWorks />
-          <WhatsInside />
-          <Testimonials />
-          <CTASection email={email} setEmail={setEmail} handleSubscribe={handleSubscribe} />
-          <Sources />
-        </main>
-
-        <Footer />
-      </div>
-    </>
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<HomePage isDark={isDark} toggleDarkMode={toggleDarkMode} />} />
+        <Route path="/privacy" element={<Layout isDark={isDark} toggleDarkMode={toggleDarkMode}><Privacy /></Layout>} />
+        <Route path="/terms" element={<Layout isDark={isDark} toggleDarkMode={toggleDarkMode}><Terms /></Layout>} />
+        <Route path="/contact" element={<Layout isDark={isDark} toggleDarkMode={toggleDarkMode}><Contact /></Layout>} />
+        <Route path="/gdpr" element={<Layout isDark={isDark} toggleDarkMode={toggleDarkMode}><GDPR /></Layout>} />
+        <Route path="/sources" element={<Layout isDark={isDark} toggleDarkMode={toggleDarkMode}><SourcesPage /></Layout>} />
+        <Route path="/sponsorship" element={<Layout isDark={isDark} toggleDarkMode={toggleDarkMode}><Sponsorship /></Layout>} />
+      </Routes>
+    </BrowserRouter>
   )
 }

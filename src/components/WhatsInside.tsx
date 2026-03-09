@@ -12,7 +12,7 @@ export default function WhatsInside() {
     {
       icon: faLaptopCode,
       title: 'Framework News',
-      description: 'ASP.NET Core, Blazor, MAUI updates and real-world implementation patterns.',
+      description: 'Updates across ASP.NET Core, Blazor, and MAUI, including practical implementation patterns.',
       color: 'from-purple-500 to-fuchsia-500'
     },
     {
@@ -36,7 +36,7 @@ export default function WhatsInside() {
     {
       icon: faBook,
       title: 'Tutorials & Guides',
-      description: 'Step-by-step tutorials, architecture patterns, and hands-on coding examples.',
+      description: 'Practical tutorials, architecture guidance, and implementation-focused examples.',
       color: 'from-red-500 to-orange-500'
     }
   ]
@@ -46,10 +46,10 @@ export default function WhatsInside() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-20">
           <h2 className="text-5xl font-bold text-slate-900 dark:text-white mb-4">
-            What You'll Discover
+            What You’ll Find in Each Issue
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            Every issue is packed with diverse, high-quality content across the entire .NET ecosystem
+            Each issue includes high-quality coverage across the full .NET ecosystem
           </p>
         </div>
         

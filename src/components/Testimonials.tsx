@@ -4,19 +4,19 @@ import { faStar, faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
 export default function Testimonials() {
   const testimonials = [
     {
-      text: "This newsletter saves me hours every week. I used to spend my mornings hunting for quality .NET content—now it's delivered straight to my inbox. Game changer!",
+      text: "This newsletter saves me hours each week. I no longer spend my mornings searching for reliable .NET content—it arrives in one concise briefing.",
       author: 'Sarah Chen',
       role: 'Senior .NET Engineer',
       rating: 5
     },
     {
-      text: 'Finally, a newsletter that respects my time. No fluff, no clickbait—just solid technical content I can actually use in my projects.',
+      text: 'A newsletter that respects my time: no fluff, no clickbait, and technical content I can apply directly in production work.',
       author: 'Michael Rodriguez',
       role: 'Tech Lead',
       rating: 5
     },
     {
-      text: "I've tried dozens of tech newsletters, but this is the only one I consistently read. The curation quality is exceptional, and I always learn something new.",
+      text: "I have tried many technical newsletters, and this is the one I read consistently. The curation quality is excellent, and each issue is valuable.",
       author: 'Emma Thompson',
       role: 'Full Stack Developer',
       rating: 5
@@ -24,7 +24,7 @@ export default function Testimonials() {
   ]
 
   return (
-    <section className="py-24 bg-slate-50 dark:bg-slate-900/50 relative overflow-hidden">
+    <section id="archive" className="py-24 bg-slate-50 dark:bg-slate-900/50 relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-violet-500/10 dark:bg-violet-500/5 rounded-full blur-3xl"></div>
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-fuchsia-500/10 dark:bg-fuchsia-500/5 rounded-full blur-3xl"></div>
@@ -32,10 +32,10 @@ export default function Testimonials() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-20">
           <h2 className="text-5xl font-bold text-slate-900 dark:text-white mb-4">
-            Loved by Developers Worldwide
+            Trusted by Developers Worldwide
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400">
-            Join thousands of developers who trust us daily
+            Read by thousands of developers each day
           </p>
         </div>
         

@@ -6,19 +6,19 @@ export default function HowItWorks() {
     {
       icon: faGlobe,
       title: 'Aggregate',
-      description: 'Our system monitors 140+ premium .NET blogs, forums, and social channels 24/7.',
+      description: 'The platform continuously monitors 140+ high-value .NET blogs, forums, and community channels.',
       number: '01'
     },
     {
       icon: faWandMagicSparkles,
       title: 'Curate',
-      description: 'AI filters and ranks content based on quality signals, then a human reviews the top picks.',
+      description: 'AI ranks content using quality signals, followed by human review to ensure relevance and accuracy.',
       number: '02'
     },
     {
       icon: faPaperPlane,
       title: 'Deliver',
-      description: 'Every morning at 7 AM EST, you receive 15-25 handpicked articles in your inbox.',
+      description: 'Every morning at 7 AM EST, you receive 15-25 carefully selected articles in your inbox.',
       number: '03'
     }
   ]
@@ -31,7 +31,7 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-400">
-            Three simple steps to stay informed
+            A clear three-step process to keep you informed
           </p>
         </div>
         

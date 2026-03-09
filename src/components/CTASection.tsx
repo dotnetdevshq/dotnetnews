@@ -24,20 +24,20 @@ export default function CTASection({ email, setEmail, handleSubscribe }: CTASect
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-6 py-3 bg-white/20 backdrop-blur-md rounded-full border border-white/30 shadow-lg">
             <FontAwesomeIcon icon={faBolt} className="text-yellow-300 animate-pulse" />
-            <span className="text-white font-semibold">Join the Community Today</span>
+            <span className="text-white font-semibold">Join the .NET News Community</span>
           </div>
 
           <h2 className="text-5xl md:text-6xl font-extrabold text-white leading-tight">
-            Start Your Journey to
+            Start Your Journey Toward
             <br />
             <span className="bg-gradient-to-r from-yellow-200 to-pink-200 bg-clip-text text-transparent">
-              .NET Mastery
+              Deeper .NET Expertise
             </span>
           </h2>
           
           <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Subscribe now and receive curated .NET insights every morning. 
-            <strong className="font-bold"> Zero cost. Zero spam. Maximum value.</strong>
+            Subscribe to receive curated .NET insights every morning. 
+            <strong className="font-bold"> No cost. No spam. Unsubscribe anytime.</strong>
           </p>
           
           {/* Subscribe Form */}
@@ -56,7 +56,7 @@ export default function CTASection({ email, setEmail, handleSubscribe }: CTASect
                 className="group px-10 py-5 bg-gradient-to-r from-violet-600 to-fuchsia-600 text-white font-bold rounded-xl hover:from-violet-700 hover:to-fuchsia-700 transform hover:scale-105 transition-all duration-300 shadow-lg whitespace-nowrap"
               >
                 <FontAwesomeIcon icon={faRocket} className="mr-2 group-hover:-translate-y-1 transition-transform duration-300" />
-                Get Started
+                Subscribe Now
               </button>
             </div>
           </form>
@@ -65,17 +65,17 @@ export default function CTASection({ email, setEmail, handleSubscribe }: CTASect
           <div className="grid md:grid-cols-3 gap-6 pt-12 max-w-3xl mx-auto">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1">
               <div className="text-3xl mb-2">✓</div>
-              <div className="text-white font-semibold">100% Free Forever</div>
+              <div className="text-white font-semibold">Completely Free</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1">
               <div className="text-3xl mb-2">⚡</div>
-              <div className="text-white font-semibold">Daily at 7 AM EST</div>
+              <div className="text-white font-semibold">Delivered Daily at 7 AM EST</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl px-6 py-4 border border-white/20 hover:bg-white/20 transition-all duration-300 transform hover:-translate-y-1">
               <div className="text-3xl mb-2">
                 <FontAwesomeIcon icon={faHeart} className="text-red-300 animate-pulse" />
               </div>
-              <div className="text-white font-semibold">2,000+ Happy Readers</div>
+              <div className="text-white font-semibold">Trusted by 2,000+ Readers</div>
             </div>
           </div>
         </div>
